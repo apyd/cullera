@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Galerie - Cullera Apartment</title>
+    <!-- content-type, which overrides http equivalent header. Because of charset, this meta should be set at first. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  Overrides http equivalent header. This tells IE to use the most updated engine.  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--  Tells crawlers how to crawl this page, and the role of this page. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="resources/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+    <script
+      type="text/javascript"
+      src="resources/js/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="resources/js/jquery.fancybox.js?v=2.1.5"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources/css/jquery.fancybox.css?v=2.1.5"
+      media="screen"
+    />
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+        $(".fancybox-buttons").fancybox({
+          openEffect: "none",
+          closeEffect: "none",
+
+          prevEffect: "none",
+          nextEffect: "none",
+
+          closeBtn: false,
+
+          helpers: {
+            title: {
+              type: "inside",
+            },
+            buttons: {},
+          },
+          afterLoad: function () {
+            this.title =
+              "Image " +
+              (this.index + 1) +
+              " of " +
+              this.group.length +
+              (this.title ? " - " + this.title : "");
+          },
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var images = document.getElementsByTagName("img");
+        if (document.body.clientWidth <= 576) {
+          for (var i = 6; i < 30; i++) {
+            var name = "resources/images/" + (i - 5) + "w.jpg";
+            images[i].setAttribute("src", name);
+          }
+        }
+      });
+    </script>
+    <style type="text/css">
+      .fancybox-custom .fancybox-skin {
+        box-shadow: 0 0 50px #222;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="galeria">
+      <nav
+        class="navbar navbar-inverse navbar-fixed-top nav-background"
+        role="navigation"
+      >
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target=".navbar-positioned"
+              id="button-nav"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+              <a href="index_de.html"
+                ><img alt="Logo" class="logo" src="resources/images/logo.png"
+              /></a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-right navbar-positioned">
+            <section>
+              <nav class="fill">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+                      ><img src="resources/images/pl.png" /><b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <div>
+                        <li>
+                          <a href="index_de.html"
+                            ><img src="resources/images/de.png"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="index_es.html"
+                            ><img src="resources/images/es.png"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="index_en.html"
+                            ><img src="resources/images/en.png"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="index.html"
+                            ><img src="resources/images/pl.png"
+                          /></a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container container-gallery">
+        <div class="tab-title">
+          <h1 class="header-description">Fotos von unserer Wohnung</h1>
+          <p>Klicken Sie auf das Foto, um es zu vergrößern</p>
+        </div>
+        <div class="gallery-row">
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/1b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/1s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/2b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/2s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/3b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/3s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/4b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/4s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/5b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/5s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/6b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/6s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/7b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/7s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/8b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/8s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/9b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/9s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/10b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/10s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/11b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/11s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/12b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/12s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/13b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/13s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/14b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/14s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/15b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/15s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/16b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/16s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/17b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/17s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/18b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/18s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/19b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/19s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/20b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/20s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/21b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/21s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div>
+            <div class="gallery-out">
+              <a
+                class="fancybox"
+                href="resources/images/22b.jpg"
+                data-fancybox-group="gallery"
+                ><img src="resources/images/22s.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(window).resize(function () {
+          var images = document.getElementsByTagName("img");
+          if (document.body.clientWidth <= 576) {
+            for (var i = 6; i < 30; i++) {
+              var name = "resources/images/" + (i - 5) + "w.jpg";
+              if (images[i].getAttribute("src") == name) {
+                break;
+              } else {
+                images[i].setAttribute("src", name);
+              }
+            }
+          } else {
+            for (var i = 6; i < 30; i++) {
+              var name = "resources/images/" + (i - 5) + "s.jpg";
+              if (images[i].getAttribute("src") == name) {
+                break;
+              } else {
+                images[i].setAttribute("src", name);
+              }
+            }
+          }
+        });
+      </script>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright 2024 &copy; Cullera Apartment</p>
+      </div>
+    </footer>
+  </body>
+</html>
